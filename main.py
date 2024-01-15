@@ -4,6 +4,11 @@ from unittest import main
 
 prob_calculator.random.seed(95)
 hat = prob_calculator.Hat(blue=4, red=2, green=6)
+#print (hat.dict)
+#print (hat.contents)
+drawn_balls = hat.draw(4)
+#print("Drawn Balls:", drawn_balls)
+#print("Updated Hat Contents:", hat.contents)
 probability = prob_calculator.experiment(
     hat=hat,
     expected_balls={"blue": 2,
